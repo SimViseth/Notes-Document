@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.security.Timestamp;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -15,5 +16,5 @@ public class DocumentResponse {
     private String title;
     private String content;
     private Boolean isPrivate;
-    private Timestamp createdAt;
+    private LocalDateTime createdAt;
 }

@@ -8,8 +8,11 @@ spring:
   jpa:
     properties:
       hibernate:
-      dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+services:
+  workspace:
+    base-url: http://workspace-service/api/v1/workspace
 server:
   port: 8031

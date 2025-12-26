@@ -9,6 +9,7 @@ import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -24,6 +25,6 @@ public class Document {
     String content;
     Boolean isPrivate;
     Boolean isDelete;
-    Timestamp createdAt;
-    Timestamp updatedAt;
+    LocalDateTime createdAt;
+    LocalDateTime updatedAt;
 }
