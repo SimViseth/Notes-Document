@@ -11,12 +11,12 @@ services:
       - "5432:5432"
 
   workspace-service:
-    image: workspace-service:latest
+    image: workspace-service
     ports:
       - "8080:8080"
 
   document-service:
-    image: document-service:latest
+    image: document-service
     ports:
       - "8031:8031"
     depends_on:
